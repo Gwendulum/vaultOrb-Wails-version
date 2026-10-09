@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=My Product
+Comment=A vault-wails application
+# The Exec line includes %u to pass the URL to the application
+Exec=/usr/local/bin/vault-wails.exe %u
+Terminal=false
+Type=Application
+Icon=vault-wails.exe
+Categories=Utility;
+StartupWMClass=vault-wails.exe
+
+ 

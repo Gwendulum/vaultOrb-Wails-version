@@ -1,0 +1,67 @@
+/* ==========================================================================
+   GLOBAL RESETS & THEME VARIABLES
+   ========================================================================== */
+
+/* Remove standard browser margin/padding and force dark background */
+body {
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Sans-Serif;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden; /* Prevents whole-window scrollbars */
+}
+
+/* Base input styling for text and password fields across the app */
+input[type="text"],
+input[type="password"] {
+  background-color: #313244;
+  color: #cdd6f4;
+  border: 1px solid #45475a;
+  border-radius: 6px;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.95rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Glowing outline when any input field gains focus */
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #89b4fa;
+  box-shadow: 0 0 0 2px rgba(137, 180, 250, 0.2);
+}
+
+/* Shared button variants used across components */
+button {
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.btn-primary {
+  background-color: #89b4fa;
+  color: #11111b;
+}
+
+.btn-secondary {
+  background-color: #45475a;
+  color: #cdd6f4;
+}
+
+.btn-danger {
+  background-color: #f38ba8;
+  color: #11111b;
+}
+
+.error {
+  color: #ef4444;
+}
